@@ -5,15 +5,13 @@ This repository contains onboarding materials for the **Recursion** team to lear
 ## Overview
 
 These examples walk through how to:
-- Track experiments and datasets using **W&B**.
-- Visualize model performance interactively with **Weave**.
-- Build simple data apps (like `pdf_summarizer`) that integrate W&B for tracking, visualization, and sharing.
+- Trace and evaluate genAI applications using wandb **Weave**.
+- Build simple data apps (like `pdf_summarizer`) that integrate W&B for tracking
 
 ## Structure
 
 - `intro-workshop/` – Walkthrough notebook  
 - `pdf_summarizer/` – Example Streamlit app that summarizes PDF content and logs results to Weave
-- `wandb/` – Local W&B data directory (auto-created during runs).  
 
 ## Getting Started
 
