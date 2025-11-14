@@ -1,0 +1,23 @@
+# Core LLM + LangChain stack
+langchain==0.3.3
+langchain-openai==0.2.2
+langchain-anthropic==0.2.1
+langchain-core==0.3.10
+
+# LangGraph for multi-step agent graph orchestration
+langgraph==0.1.6
+
+# Weave (for observability, state, and op tracking)
+weave
+
+# General utilities used across notebook cells
+python-dotenv>=1.0.0
+tqdm>=4.66.4
+pydantic>=2.8.2
+typing-extensions>=4.11.0
+
+# OpenAI + Anthropic SDKs (for model invocation)
+openai>=1.40.0
+
+# LangGraph memory / state persistence
+sqlalchemy>=2.0.31

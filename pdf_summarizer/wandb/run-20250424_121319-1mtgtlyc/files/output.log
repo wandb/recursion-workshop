@@ -1,0 +1,69 @@
+weave version 0.51.43 is available!  To upgrade, please run:
+ $ pip install weave --upgrade
+Logged in as Weights & Biases user: uma-wandb.
+View Weave data at https://wandb.ai/smle-demo/summarization-app/weave
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm.set_verbose=True'.
+Traceback (most recent call last):
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/site-packages/litellm/llms/OpenAI/openai.py", line 893, in acompletion
+    openai_aclient: AsyncOpenAI = self._get_openai_client(  # type: ignore
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/site-packages/litellm/llms/OpenAI/openai.py", line 570, in _get_openai_client
+    _new_client: Union[OpenAI, AsyncOpenAI] = AsyncOpenAI(
+                                              ^^^^^^^^^^^^
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/site-packages/openai/_client.py", line 337, in __init__
+    raise OpenAIError(
+openai.OpenAIError: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/site-packages/litellm/main.py", line 483, in acompletion
+    response = await init_response
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/site-packages/litellm/llms/OpenAI/openai.py", line 948, in acompletion
+    raise OpenAIError(
+litellm.llms.OpenAI.openai.OpenAIError: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/umakrishnaswamy/Desktop/smle/weave/pdf_summarizer/model.py", line 123, in <module>
+    main(config)
+  File "/Users/umakrishnaswamy/Desktop/smle/weave/pdf_summarizer/model.py", line 110, in main
+    result = asyncio.run(authoring_model.predict(user_text))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/site-packages/weave/trace/op.py", line 631, in wrapper
+    res, _ = await _call_async_func(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/site-packages/weave/trace/op.py", line 486, in _call_async_func
+    res = await func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/umakrishnaswamy/Desktop/smle/weave/pdf_summarizer/model.py", line 76, in predict
+    response = await acompletion(**completion_args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/site-packages/litellm/utils.py", line 1175, in wrapper_async
+    raise e
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/site-packages/litellm/utils.py", line 1031, in wrapper_async
+    result = await original_function(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/site-packages/litellm/main.py", line 505, in acompletion
+    raise exception_type(
+          ^^^^^^^^^^^^^^^
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2137, in exception_type
+    raise e
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 310, in exception_type
+    raise AuthenticationError(
+litellm.exceptions.AuthenticationError: litellm.AuthenticationError: AuthenticationError: OpenAIException - The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+
+🍩 https://wandb.ai/smle-demo/summarization-app/r/call/01966938-39b0-7522-8a52-65e7edeca241

@@ -1,0 +1,44 @@
+{
+  "os": "macOS-15.4-arm64-arm-64bit",
+  "python": "CPython 3.11.4",
+  "startedAt": "2025-04-24T19:21:05.656450Z",
+  "program": "/Users/umakrishnaswamy/Desktop/smle/weave/pdf_summarizer/model.py",
+  "codePath": "weave/pdf_summarizer/model.py",
+  "git": {
+    "remote": "https://github.com/wandb/smle.git",
+    "commit": "3a04e4d1a1de9dd1d206997d65c86dde4bd94a24"
+  },
+  "email": "uma.krishnaswamy@wandb.com",
+  "root": "/Users/umakrishnaswamy/Desktop/smle/weave/pdf_summarizer",
+  "host": "Uma-Krishnaswamy-FF7FM3XLQL.local",
+  "executable": "/Users/umakrishnaswamy/anaconda3/envs/tf/bin/python",
+  "codePathLocal": "model.py",
+  "cpu_count": 10,
+  "cpu_count_logical": 10,
+  "disk": {
+    "/": {
+      "total": "994662584320",
+      "used": "909694488576"
+    },
+    "/System/Volumes/Data": {
+      "total": "994662584320",
+      "used": "909694488576"
+    }
+  },
+  "memory": {
+    "total": "68719476736"
+  },
+  "cpu": {
+    "count": 10,
+    "countLogical": 10
+  },
+  "apple": {
+    "name": "Apple M1 Max",
+    "ecpuCores": 2,
+    "pcpuCores": 8,
+    "gpuCores": 24,
+    "memoryGb": 64,
+    "swapTotalBytes": "5368709120",
+    "ramTotalBytes": "68719476736"
+  }
+}

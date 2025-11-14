@@ -1,0 +1,16 @@
+{
+  "os": "macOS-15.4-arm64-arm-64bit",
+  "python": "CPython 3.11.4",
+  "startedAt": "2025-04-24T19:12:43.429489Z",
+  "program": "/Users/umakrishnaswamy/Desktop/smle/weave/pdf_summarizer/model.py",
+  "codePath": "weave/pdf_summarizer/model.py",
+  "git": {
+    "remote": "https://github.com/wandb/smle.git",
+    "commit": "3a04e4d1a1de9dd1d206997d65c86dde4bd94a24"
+  },
+  "email": "uma.krishnaswamy@wandb.com",
+  "root": "/Users/umakrishnaswamy/Desktop/smle/weave/pdf_summarizer",
+  "host": "Uma-Krishnaswamy-FF7FM3XLQL.local",
+  "executable": "/Users/umakrishnaswamy/anaconda3/envs/tf/bin/python",
+  "codePathLocal": "model.py"
+}

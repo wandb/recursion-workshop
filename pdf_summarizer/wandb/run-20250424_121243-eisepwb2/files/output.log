@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/umakrishnaswamy/Desktop/smle/weave/pdf_summarizer/model.py", line 116, in <module>
+    weave.init('smle-demo/summarization-app')
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/site-packages/weave/trace/api.py", line 79, in init
+    initialized_client = weave_init.init_weave(
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/site-packages/weave/trace/weave_init.py", line 113, in init_weave
+    weave_client.check_wandb_run_matches(wandb_run_id, entity_name, project_name)
+  File "/Users/umakrishnaswamy/anaconda3/envs/tf/lib/python3.11/site-packages/weave/trace/weave_client.py", line 2297, in check_wandb_run_matches
+    raise ValueError(
+ValueError: Project Mismatch: weave and wandb must be initialized using the same project. Found wandb.init targeting project "smle-demo/smle-demo" and weave.init targeting project "smle-demo/summarization-app". To fix, please use the same project for both library initializations.
