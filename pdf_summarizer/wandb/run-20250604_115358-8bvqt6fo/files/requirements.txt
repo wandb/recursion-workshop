@@ -14,7 +14,7 @@ toml==0.10.2
 joblib==1.5.1
 pydantic==2.11.2
 typing-inspection==0.4.1
-pillow==11.2.1
+pillow==11.3.0
 pydeck==0.9.1
 yarl==1.20.0
 platformdirs==4.3.8
