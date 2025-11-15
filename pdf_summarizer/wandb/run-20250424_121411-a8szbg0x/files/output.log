@@ -1,5 +1,0 @@
-weave version 0.51.43 is available!  To upgrade, please run:
- $ pip install weave --upgrade
-Logged in as Weights & Biases user: uma-wandb.
-View Weave data at https://wandb.ai/smle-demo/summarization-app/weave
-🍩 https://wandb.ai/smle-demo/summarization-app/r/call/01966938-da85-7660-bf12-1abc214c70da
